@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:background="@drawable/gradient_transparent">
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sofo"/>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@id/txtUserName"
+        style="@style/register_text_box_style"
+        android:hint="@string/username"
+        android:inputType="textPersonName"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@id/txtPassword"
+            style="@style/register_text_box_style"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingEnd="60dp"
+            android:paddingLeft="@dimen/quarter_margin"
+            android:paddingRight="50dp"
+            android:paddingStart="@dimen/quarter_margin"
+            tools:text="ashgdhagsdjghasdjjhjkdf"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnForgotPassword"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtPassword"
+            android:layout_alignEnd="@id/txtPassword"
+            android:layout_alignRight="@id/txtPassword"
+            android:layout_marginBottom="@dimen/half_margin"
+            android:background="?android:attr/selectableItemBackground"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingBottom="@dimen/half_margin"
+            android:paddingLeft="@dimen/quarter_margin"
+            android:paddingRight="@dimen/quarter_margin"
+            android:paddingTop="@dimen/half_margin"
+            android:text="@string/forgot"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            tools:ignore="SmallSp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/quarter_margin"
+            android:layout_marginTop="@dimen/quarter_margin"
+            android:src="@drawable/ic_facebook"
+            app:backgroundTint="@color/facebook_primary"
+            app:backgroundTintMode="src_atop"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnGooglePlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/quarter_margin"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="@dimen/quarter_margin"
+            android:src="@drawable/ic_google_plus"
+            app:backgroundTint="@color/google_primary"
+            app:backgroundTintMode="src_atop"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/quarter_margin"
+            android:layout_marginTop="@dimen/quarter_margin"
+            android:src="@drawable/ic_twitter"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/default_margin"
+            app:backgroundTint="@color/twitter_primary"
+            app:backgroundTintMode="src_atop"/>
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight=".8"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@id/btnLogin"
+        style="@style/button_style"
+        android:layout_marginBottom="@dimen/half_margin"
+        android:text="@string/login"/>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight=".4"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@id/btnRegister"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:paddingBottom="@dimen/quarter_margin"
+        android:paddingLeft="@dimen/quarter_margin"
+        android:paddingRight="@dimen/quarter_margin"
+        android:paddingTop="@dimen/quarter_margin"
+        android:text="@string/create_an_account"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight=".4"/>
+
+</LinearLayout>

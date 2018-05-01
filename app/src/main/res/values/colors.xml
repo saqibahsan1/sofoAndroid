@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryTransparent">#3a00e5ff</color>
+    <color name="colorPrimary">#00e5ff</color>
+    <color name="colorPrimaryDark">#02cbfa</color>
+    <color name="colorPrimaryLight">#B2DFDB</color>
+    <color name="colorAccent">#007AFF</color>
+    <color name="colorAccentDark">#005fc6</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+
+    <!--Facebook-->
+    <color name="facebook_primary">#3b5998</color>
+
+    <!--Google-->
+    <color name="google_primary"> #DB4437</color>
+
+    <!--Twitter-->
+    <color name="twitter_primary">#1DA1F2</color>
+</resources>

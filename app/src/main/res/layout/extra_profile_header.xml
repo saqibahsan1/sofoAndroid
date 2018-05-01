@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/gradient_transparent"
+        app:layout_constraintBottom_toTopOf="@+id/profileSocialMediaButtonsHolder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTop"
+        />
+
+    <View
+        android:id="@+id/dummyToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"/>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgDp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:elevation="@dimen/quarter_margin"
+        android:src="@drawable/sachin2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dummyToolbar"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:text="Sony Raj"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="1026 connections"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblName"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblSnapChatGhost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:gravity="center_vertical"
+        android:text="manchester | Age 32 | Single | Developer"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAt"
+        app:layout_goneMarginTop="@dimen/half_margin"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblWebSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:text="www.google.com"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblSnapChatGhost"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/profileSocialMediaButtonsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/default_margin"
+        android:paddingBottom="@dimen/half_margin"
+        app:layout_constraintTop_toBottomOf="@+id/lblWebSite">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_facebook_white_24"
+            app:backgroundTint="@color/facebook_primary"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/half_margin"
+            android:layout_height="1dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_twitter_white_24"
+            app:backgroundTint="@color/twitter_primary"/>
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/half_margin"
+            android:layout_height="1dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnInstagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_instagram_white_24"
+            app:backgroundTint="#444444"/>
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/half_margin"
+            android:layout_height="1dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_linkedin_white_24"
+            app:backgroundTint="#1685af"/>
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/half_margin"
+            android:layout_height="1dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_youtube_play_white_24"
+            app:backgroundTint="@color/google_primary"/>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:id="@id/bottomSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@+id/profileSocialMediaButtonsHolder"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblUserTagLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:gravity="center"
+        android:maxWidth="175dp"
+        android:padding="@dimen/half_margin"
+        android:text="Android Developer looking for new projects"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomSeparator"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblUserTagLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:gravity="center"
+        android:maxWidth="250dp"
+        android:padding="@dimen/half_margin"
+        android:text="jshglkjshdfk dfgsdfgsdgfsd fgsdfghk ljshd f g ljkh sdlfgk skldjf"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblUserTagLine"/>
+
+
+</android.support.constraint.ConstraintLayout>
+
+            

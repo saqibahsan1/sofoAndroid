@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "528632253063",
+    "firebase_url": "https://sofo-329ce.firebaseio.com",
+    "project_id": "sofo-329ce",
+    "storage_bucket": "sofo-329ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528632253063:android:b6088295309c9451",
+        "android_client_info": {
+          "package_name": "com.twixttechnologies.sofo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528632253063-hjv726nbvo9lsin4a7ja0s44ndrg8sqe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twixttechnologies.sofo",
+            "certificate_hash": "bb02298d9a2f5bbe9d140ca0b5dd6ae363d6c094"
+          }
+        },
+        {
+          "client_id": "528632253063-a6n2pe4alqmhqpm7cljml565egrstir7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRQgkk3KWZ7NG2a2oA4VHWfj4uTs1C2YI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528632253063-a6n2pe4alqmhqpm7cljml565egrstir7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

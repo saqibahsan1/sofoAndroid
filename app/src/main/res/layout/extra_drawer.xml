@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/gradient_transparent"
+    tools:layout_width="280dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/imgDp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/sachin2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblUserName"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:gravity="center"
+        android:text="Sony Raj"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgDp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@id/lblFollowers"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="500 Followers"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblUserName"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/drawer_button_style"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawableStart="@drawable/ic_user"
+        android:text="@string/profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFollowers"/>
+
+    <View
+        android:id="@+id/btnProfile"
+        style="@style/button_view_style"
+        app:layout_constraintTop_toBottomOf="@id/lblFollowers"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblMessage"
+        style="@style/drawer_button_style"
+        android:drawableLeft="@drawable/ic_mail_outline"
+        android:drawableStart="@drawable/ic_mail_outline"
+        android:text="@string/messages"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfile"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblMessageCount"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_round"
+        android:gravity="center"
+        android:minHeight="20dp"
+        android:minWidth="20dp"
+        android:text="99"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/lblMessage"
+        app:layout_constraintRight_toRightOf="@+id/lblMessage"
+        app:layout_constraintTop_toTopOf="@id/lblMessage"/>
+
+    <View
+        android:id="@+id/btnMessages"
+        style="@style/button_view_style"
+        app:layout_constraintTop_toBottomOf="@id/btnProfile"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/drawer_button_style"
+        android:drawableLeft="@drawable/ic_contacts_outline"
+        android:drawableStart="@drawable/ic_contacts_outline"
+        android:text="@string/contacts"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMessages"/>
+
+    <View
+        android:id="@+id/btnContacts"
+        style="@style/button_view_style"
+        app:layout_constraintTop_toBottomOf="@id/btnMessages"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/drawer_button_style"
+        android:drawableLeft="@drawable/ic_settings_white"
+        android:drawableStart="@drawable/ic_settings_white"
+        android:text="@string/settings"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContacts"/>
+
+    <View
+        android:id="@+id/btnBecomePremium"
+        style="@style/button_view_style"
+        app:layout_constraintTop_toBottomOf="@id/btnSettings"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/drawer_button_style"
+        android:layout_width="wrap_content"
+        android:text="@string/become_premium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSettings"/>
+
+    <View
+        android:id="@+id/btnSettings"
+        style="@style/button_view_style"
+        app:layout_constraintTop_toBottomOf="@id/btnContacts"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="42dp"
+        android:drawableLeft="@drawable/ic_sign_out"
+        android:drawablePadding="@dimen/half_margin"
+        android:drawableStart="@drawable/ic_sign_out"
+        android:gravity="center"
+        android:text="@string/log_out"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/half_margin"
+        android:src="@drawable/ic_close"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

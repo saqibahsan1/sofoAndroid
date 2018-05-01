@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_transparent">
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sofo"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@id/txtName"
+        style="@style/register_text_box_style"
+        android:hint="@string/name"
+        android:inputType="textPersonName"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@id/txtPhone"
+        style="@style/register_text_box_style"
+        android:hint="@string/phone"
+        android:inputType="phone"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@id/txtAddress"
+        style="@style/register_text_box_style"
+        android:hint="@string/address"
+        android:inputType="textPostalAddress"
+        android:maxLines="4"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@id/txtEmail"
+        style="@style/register_text_box_style"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@id/txtUserName"
+        style="@style/register_text_box_style"
+        android:hint="@string/username"
+        android:inputType="textPersonName"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@id/txtPassword"
+        style="@style/register_text_box_style"
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@id/btnRegister"
+        android:layout_marginBottom="@dimen/half_margin"
+        android:text="@string/register"
+        style="@style/button_style"/>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight=".9"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textColor="@android:color/white"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@id/btnLogin"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingBottom="@dimen/quarter_margin"
+            android:paddingLeft="@dimen/quarter_margin"
+            android:paddingRight="@dimen/quarter_margin"
+            android:paddingTop="@dimen/quarter_margin"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight=".9"/>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/half_margin"
+    android:paddingBottom="@dimen/half_margin"
+    android:paddingRight="@dimen/half_margin"
+    tools:background="@android:color/white">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgFeatured"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblLocationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="place name"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFeatured"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="20"
+        android:drawableLeft="@drawable/ic_users"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="@+id/imgFeatured"
+        app:layout_constraintTop_toBottomOf="@+id/imgFeatured"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:drawableLeft="@drawable/ic_location_on_14"
+        android:drawableStart="@drawable/ic_location_on_14"
+        android:text="10 m away"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblLocationName"/>
+
+
+</android.support.constraint.ConstraintLayout>

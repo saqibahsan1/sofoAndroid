@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/half_margin"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgFeedPostedBy"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sachin2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblPostedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_margin"
+        android:drawablePadding="@dimen/half_margin"
+        android:drawableRight="@drawable/ic_instagram"
+        android:gravity="center_vertical"
+        android:text="Posted on"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@+id/imgFeedPostedBy"
+        app:layout_constraintTop_toTopOf="@+id/imgFeedPostedBy"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:drawableLeft="@drawable/ic_posted_time"
+        android:drawablePadding="@dimen/half_margin"
+        android:text="10 mins ago"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintLeft_toLeftOf="@+id/lblPostedOn"
+        app:layout_constraintTop_toBottomOf="@+id/lblPostedOn"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:drawablePadding="@dimen/quarter_margin"
+        android:drawableTop="@drawable/ic_favorite_18"
+        android:text="150"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@id/imgFeedPostedBy"
+        app:layout_constraintRight_toRightOf="@+id/imgFeedPostedBy"
+        app:layout_constraintTop_toBottomOf="@+id/imgFeedPostedBy"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:drawableTop="@drawable/ic_mode_comment_18"
+        android:text="150"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@+id/imgFeedPostedBy"
+        app:layout_constraintRight_toRightOf="@+id/imgFeedPostedBy"
+        app:layout_constraintTop_toBottomOf="@+id/lblLikes"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblFeedText"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_margin"
+        android:layout_marginTop="@dimen/half_margin"
+        android:text="It is a long established fact that a reader will be distracted by the readable cof a page when looking at it s layout. The point of using Lorem-Ipsum is that it has more or less distribution of letters,as opposed to using `Content here, Content here`, making it look like readable"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@id/imgFeedPostedBy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFeedPostedBy"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgFeedLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_margin"
+        android:layout_marginRight="@dimen/half_margin"
+        android:layout_marginTop="@dimen/half_margin"
+        android:adjustViewBounds="true"
+        android:maxHeight="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        app:layout_constraintLeft_toRightOf="@id/imgFeedPostedBy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFeedText"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgFeedSmallOne"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/half_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        app:layout_constraintLeft_toLeftOf="@+id/imgFeedLarge"
+        app:layout_constraintTop_toBottomOf="@+id/imgFeedLarge"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgFeedSmallTwo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/quarter_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        app:layout_constraintLeft_toRightOf="@id/imgFeedSmallOne"
+        app:layout_constraintTop_toTopOf="@id/imgFeedSmallOne"/>
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgFeedSmallThree"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/quarter_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        app:layout_constraintLeft_toRightOf="@id/imgFeedSmallTwo"
+        app:layout_constraintTop_toTopOf="@id/imgFeedSmallOne"/>
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgFeedSmallFour"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/quarter_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        app:layout_constraintLeft_toRightOf="@id/imgFeedSmallThree"
+        app:layout_constraintTop_toTopOf="@id/imgFeedSmallOne"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/half_margin"
+        android:layout_marginRight="@dimen/half_margin"
+        android:layout_marginTop="@dimen/half_margin"
+        android:background="@color/colorDivider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgFeedSmallOne"/>
+
+</android.support.constraint.ConstraintLayout>

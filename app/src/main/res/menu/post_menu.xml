@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/mnuOne" android:icon="@drawable/rectangle" app:showAsAction="always"
+          android:title="One"/>
+    <item android:id="@+id/mnuTwo" android:icon="@drawable/rectangle" app:showAsAction="always"
+          android:title="One"/>
+    <item android:id="@+id/mnuThree" android:icon="@drawable/rectangle" app:showAsAction="always"
+          android:title="One"/>
+    <item android:id="@+id/mnuFour" android:icon="@drawable/rectangle" app:showAsAction="always"
+          android:title="One"/>
+</menu>

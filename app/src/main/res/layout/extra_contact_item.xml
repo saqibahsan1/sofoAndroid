@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/half_margin"
+    tools:background="@android:color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgContact"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/sachin2"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_margin"
+        android:text="@string/sachin"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/imgContact"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_margin"
+        android:layout_marginRight="@dimen/quarter_margin"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:text="it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgContact"
+        app:layout_constraintLeft_toRightOf="@+id/imgContact"
+        app:layout_constraintRight_toLeftOf="@id/middleSeparator"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_margin"
+        android:layout_marginRight="@dimen/half_margin"
+        android:drawableLeft="@drawable/ic_location_on_14"
+        android:drawablePadding="@dimen/half_margin"
+        android:text="10 Km away"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="11sp"
+        app:layout_constraintRight_toLeftOf="@id/middleSeparator"
+        app:layout_constraintTop_toTopOf="@+id/lblContactName"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="Mutual on"
+        android:drawableRight="@drawable/facebook__x28_alt_x29_"
+        android:drawablePadding="@dimen/half_margin"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/lblContactName"
+        app:layout_constraintTop_toBottomOf="@+id/lblContactName"/>
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btnMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/half_margin"
+        android:src="@drawable/ic_message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@id/middleSeparator"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/quarter_margin"
+        android:background="@color/colorDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/imgContact"
+        app:layout_constraintRight_toLeftOf="@+id/btnMessage"
+        app:layout_constraintTop_toTopOf="@+id/imgContact"/>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipeHolder"
+    android:layout_margin="@dimen/default_margin"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSelectedLocation"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/image"/>
+
+        <android.support.v4.widget.Space
+            android:id="@id/middleSeparator"
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSelectedLocation"
+            app:layout_constraintTop_toTopOf="@+id/imgSelectedLocation"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblSelectedLocationName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/half_margin"
+            android:layout_marginRight="@dimen/quarter_margin"
+            android:layout_marginStart="@dimen/half_margin"
+            android:ellipsize="marquee"
+            android:text="Nearby bar"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/middleSeparator"
+            app:layout_constraintLeft_toRightOf="@+id/imgSelectedLocation"
+            app:layout_constraintRight_toLeftOf="@id/rtRating"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblOpenNow"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/half_margin"
+            android:layout_marginStart="@dimen/half_margin"
+            android:text="Open now"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/imgSelectedLocation"
+            app:layout_constraintTop_toBottomOf="@id/middleSeparator"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/half_margin"
+            android:drawableLeft="@drawable/ic_location_on_14"
+            android:drawablePadding="@dimen/quarter_margin"
+            android:gravity="center"
+            android:text="3.5 KM"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintLeft_toRightOf="@+id/lblOpenNow"
+            app:layout_constraintTop_toTopOf="@+id/lblOpenNow"/>
+
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rtRating"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="#fdd602"
+            android:rating="3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lblSelectedLocationName"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 People here"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lblOpenNow"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/half_margin"
+            android:text="sdgjklshdfklgjhsdfgjhsjkdfghksjhdfgsdlfghldfghsldfghsdfgjkhlsjfghsdghsdjfghsjdfghlskjfghdlksjdhfglksdh"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/imgSelectedLocation"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSelectedLocation"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>
+
+

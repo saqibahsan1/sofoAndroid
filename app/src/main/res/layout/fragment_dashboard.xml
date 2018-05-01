@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/default_margin"
+    android:paddingRight="@dimen/default_margin"
+    android:paddingTop="@dimen/half_margin">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblFeaturedAroundYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/half_margin"
+        android:text="Featured around you"
+        android:textColor="@color/colorPrimaryText"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstDashboardFeatured"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFeaturedAroundYou"
+        tools:layout_height="100dp"/>
+
+    <View
+        android:id="@id/separator"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lstDashboardFeatured"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/ltChecks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/chkAroundMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/primary_round_check"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/half_margin"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"
+                android:paddingTop="@dimen/half_margin"
+                android:text="Around me"
+                android:textColor="@color/check_text_color"
+                android:textSize="11sp"
+                tools:textColor="@color/colorPrimaryDark"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/half_margin"
+                android:background="@drawable/primary_round_check"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/half_margin"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"
+                android:paddingTop="@dimen/half_margin"
+                android:text="Clubs"
+                android:textColor="@color/check_text_color"
+                android:textSize="11sp"
+                tools:textColor="@color/colorPrimaryDark"/>
+
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/half_margin"
+                android:background="@drawable/primary_round_check"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/half_margin"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"
+                android:paddingTop="@dimen/half_margin"
+                android:text="Nigntlife"
+                android:textColor="@color/check_text_color"
+                android:textSize="11sp"
+                tools:textColor="@color/colorPrimaryDark"/>
+
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/half_margin"
+                android:background="@drawable/primary_round_check"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/half_margin"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"
+                android:paddingTop="@dimen/half_margin"
+                android:text="Food"
+                android:textColor="@color/check_text_color"
+                android:textSize="11sp"
+                tools:textColor="@color/colorPrimaryDark"/>
+
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/half_margin"
+                android:layout_marginStart="@dimen/half_margin"
+                android:background="@drawable/gradient"
+                android:elevation="4dp"
+                android:src="@drawable/ic_add_24"
+                app:fabSize="mini"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstDashboardLocations"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/half_margin"
+        app:layout_constraintBottom_toTopOf="@+id/btnChat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ltChecks"/>
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/quarter_margin"
+        android:src="@drawable/ic_setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btnChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/half_margin"
+        android:src="@drawable/ic_message_new"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

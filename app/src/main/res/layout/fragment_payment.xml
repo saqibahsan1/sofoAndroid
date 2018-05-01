@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/default_margin">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:drawableLeft="@drawable/ic_apple"
+        android:drawableStart="@drawable/ic_apple"
+        android:text="Pay"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Cancel"
+        android:minHeight="0dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/btnCancel"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"
+        android:id="@+id/topSeparator"
+        android:layout_marginTop="@dimen/half_margin"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancel"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        app:layout_constraintTop_toBottomOf="@+id/topSeparator"
+        android:id="@+id/lblCard"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="CARD"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/half_margin"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAPITAL ONE BANK DEBIT"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/lblCard"
+        app:layout_constraintTop_toTopOf="@+id/lblCard"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblCardNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="(**** 3284)"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/lblCard"
+        app:layout_constraintTop_toBottomOf="@+id/lblCard"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lblCardNo"
+        app:layout_constraintBottom_toBottomOf="@id/lblCardNo"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/half_margin"
+        android:background="@color/colorDivider"
+        app:layout_constraintTop_toBottomOf="@id/lblCardNo"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblShipping"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:text="SHIPPING"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOHN APPLESEED"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/lblShipping"
+        app:layout_constraintTop_toTopOf="@+id/lblShipping"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblAddress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="683 JEFFERSON STREET"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/lblShipping"
+        app:layout_constraintTop_toBottomOf="@+id/lblShipping"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="TIBURON, CA 94920"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/lblShipping"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddress1"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintBottom_toTopOf="@id/middleSeparator"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator"/>
+
+
+    <View
+        android:id="@id/middleSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/half_margin"
+        android:background="@color/colorDivider"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddress2"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblContact"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:text="SHIPPING"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middleSeparator"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J.APPLESEED@ICLOUD.COM"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/lblContact"
+        app:layout_constraintTop_toTopOf="@+id/lblContact"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblContactNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="(405) 555-0198"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/lblContact"
+        app:layout_constraintTop_toBottomOf="@+id/lblContact"/>
+
+    <View
+        android:id="@id/bottomSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/half_margin"
+        android:background="@color/colorDivider"
+        app:layout_constraintTop_toBottomOf="@+id/lblContactNo"/>
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintBottom_toTopOf="@id/bottomSeparator"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middleSeparator"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblSubTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_double"
+        android:text="SUBTOTAL"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintLeft_toRightOf="@id/lblContact"
+        app:layout_constraintTop_toBottomOf="@id/bottomSeparator"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblSalesTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="SALES TAX"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintLeft_toLeftOf="@id/lblSubTotal"
+        app:layout_constraintTop_toBottomOf="@id/lblSubTotal"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblShipping2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="SHIPPING"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintLeft_toLeftOf="@id/lblSalesTax"
+        app:layout_constraintTop_toBottomOf="@id/lblSalesTax"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblSubTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="$ 199.0"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lblSubTotal"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="$11.99"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lblSalesTax"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="$0.0"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lblShipping2"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblPayTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_double"
+        android:text="PAY TARGET"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/lblShipping2"
+        app:layout_constraintTop_toBottomOf="@id/lblShipping2"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$210.99"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lblPayTarget"/>
+
+    <View
+        android:id="@+id/viewSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:background="@color/colorDivider"
+        app:layout_constraintTop_toBottomOf="@+id/lblPayTarget"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:drawableTop="@drawable/ic_fingerprint"
+        android:text="Pay with touch ID"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewSeparator"/>
+
+
+</android.support.constraint.ConstraintLayout>

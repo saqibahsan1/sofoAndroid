@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Others-->
+    <item name="toolbar" type="id">toolbar</item>
+    <item name="mainContainer" type="id">mainContainer</item>
+
+    <!--Separators-->
+    <item name="separator" type="id">separator</item>
+    <item name="topSeparator" type="id">topSeparator</item>
+    <item name="middleSeparator" type="id">middleSeparator</item>
+    <item name="bottomSeparator" type="id">bottomSeparator</item>
+
+
+    <!--text box-->
+    <item name="txtUserName" type="id">txtUserName</item>
+    <item name="txtPassword" type="id">txtPassword</item>
+    <item name="txtConfirmPassword" type="id">txtConfirmPassword</item>
+    <item name="txtEmail" type="id">txtEmail</item>
+    <item name="txtName" type="id">txtName</item>
+    <item name="txtPhone" type="id">txtPhone</item>
+    <item name="txtAddress" type="id">txtAddress</item>
+
+
+    <!--Buttons-->
+    <item name="btnNext" type="id">btnNext</item>
+    <item name="btnSubmit" type="id">btnSubmit</item>
+    <item name="btnRegister" type="id">btnRegister</item>
+    <item name="btnLogin" type="id">btnLogin</item>
+    <item name="btnLogout" type="id">btnLogout</item>
+
+
+    <!--Image-->
+    <item name="imgDp" type="id">imgDp</item>
+
+    <!--labels-->
+    <item name="lblUserName" type="id">lblUserName</item>
+    <item name="lblFollowers" type="id">lblFollowers</item>
+    <item name="lblEmail" type="id">lblEmail</item>
+    <item name="amu_text" type="id">amu_text</item>
+
+</resources>

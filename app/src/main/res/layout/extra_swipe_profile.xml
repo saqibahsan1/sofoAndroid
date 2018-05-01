@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="@dimen/quarter_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/half_margin"
+                android:drawableEnd="@drawable/contact_icon"
+                android:drawableRight="@drawable/contact_icon"
+                android:gravity="center"
+                android:text="@string/sachin"
+                android:textColor="@color/colorPrimaryText"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sachin2"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/half_margin"
+                android:text="20M Connections"
+                android:textColor="@color/colorPrimaryText"
+                android:textStyle="bold"/>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/lblSnapChatGhost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/half_margin"
+                android:gravity="center_vertical"
+                android:text="manchester | Age 32 | Single | Developer"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="12sp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/lblWebSite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/half_margin"
+                android:text="www.google.com"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="12sp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/profileSocialMediaButtonsHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/half_margin"
+                android:paddingTop="@dimen/half_margin"
+                >
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_facebook_white_24"
+                    app:backgroundTint="@color/facebook_primary"
+                    app:fabSize="mini"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/half_margin"
+                    android:layout_height="1dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_twitter_white_24"
+                    app:backgroundTint="@color/twitter_primary"
+                    app:fabSize="mini"/>
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/half_margin"
+                    android:layout_height="1dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnInstagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_instagram_white_24"
+                    app:backgroundTint="#444444"
+                    app:fabSize="mini"/>
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/half_margin"
+                    android:layout_height="1dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_linkedin_white_24"
+                    app:backgroundTint="#1685af"
+                    app:fabSize="mini"/>
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/half_margin"
+                    android:layout_height="1dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_youtube_play_white_24"
+                    app:backgroundTint="@color/google_primary"
+                    app:fabSize="mini"/>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginBottom="@dimen/default_margin_double"
+                android:background="@drawable/white_round_corner_button_bg"
+                android:text="@string/connect"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

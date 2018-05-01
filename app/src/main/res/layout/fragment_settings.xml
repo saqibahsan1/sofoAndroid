@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/imgDp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:src="@drawable/sachin1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <android.support.v4.widget.Space
+            android:id="@id/middleSeparator"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgDp"
+            app:layout_constraintLeft_toRightOf="@id/imgDp"
+            app:layout_constraintTop_toTopOf="@id/imgDp"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@id/lblUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/quarter_margin"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginStart="@dimen/default_margin"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintBottom_toTopOf="@id/middleSeparator"
+            app:layout_constraintLeft_toRightOf="@id/imgDp"
+            android:text="Sony Raj"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@id/lblEmail"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/half_margin"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginStart="@dimen/default_margin"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@id/imgDp"
+            app:layout_constraintTop_toBottomOf="@id/middleSeparator"
+            android:text="a@a.c"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblAccountSettings"
+            style="@style/account_settings_header_style"
+            android:text="@string/account_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgDp"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblUserName2"
+            style="@style/settings_text_style"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblAccountSettings"
+            android:text="Sony Raj"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnEditUserName"
+            style="@style/settings_edit_button_style"
+            android:text="@string/edit"
+            app:layout_constraintBottom_toBottomOf="@id/lblUserName2"
+            app:layout_constraintRight_toRightOf="@id/lblUserName2"
+            app:layout_constraintTop_toTopOf="@id/lblUserName2"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblPassword"
+            style="@style/settings_text_style"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblUserName2"
+            android:text="*******************"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnEditPassword"
+            style="@style/settings_edit_button_style"
+            android:text="@string/edit"
+            app:layout_constraintBottom_toBottomOf="@id/lblPassword"
+            app:layout_constraintRight_toRightOf="@id/lblPassword"
+            app:layout_constraintTop_toTopOf="@id/lblPassword"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblEmail2"
+            style="@style/settings_text_style"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblPassword"
+            android:text="a@a.c"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnEditEmail"
+            style="@style/settings_edit_button_style"
+            android:text="@string/edit"
+            app:layout_constraintBottom_toBottomOf="@id/lblEmail2"
+            app:layout_constraintRight_toRightOf="@id/lblEmail2"
+            app:layout_constraintTop_toTopOf="@id/lblEmail2"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblAddress"
+            style="@style/settings_text_style"
+            android:ellipsize="marquee"
+            android:maxLines="3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblEmail2"
+            android:text="Some address goes here..."/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnEditAddress"
+            style="@style/settings_edit_button_style"
+            android:text="@string/edit"
+            app:layout_constraintBottom_toBottomOf="@id/lblAddress"
+            app:layout_constraintRight_toRightOf="@id/lblAddress"
+            app:layout_constraintTop_toTopOf="@id/lblAddress"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblPrivacySettings"
+            style="@style/account_settings_header_style"
+            android:text="@string/privacy"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblAddress"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/ghost_mode"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintTop_toBottomOf="@id/lblPrivacySettings"/>
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/tglGhostMode"
+            style="@style/toggle_button_style"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblPrivacySettings"
+            app:track="@drawable/toggle_switch_track"
+            tools:checked="true"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblGhostModeDescription"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="?android:attr/actionBarSize"
+            android:layout_marginRight="?android:attr/actionBarSize"
+            android:layout_marginTop="@dimen/half_margin"
+            android:text="@string/render_you_hidden_from_search_and_location_list_however_if_you_are_within_another_user_s_line_of_sight_you_would_be_discoverable"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tglGhostMode"
+            app:layout_constraintTop_toBottomOf="@id/tglGhostMode"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/business_mode"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintTop_toBottomOf="@id/lblGhostModeDescription"/>
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/tglBusinessMode"
+            style="@style/toggle_button_style"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblGhostModeDescription"
+            app:track="@drawable/toggle_switch_track"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblAddSocialMedia"
+            style="@style/account_settings_header_style"
+            android:text="@string/add_your_social_media_accounts"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tglBusinessMode"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/facebook"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintBottom_toBottomOf="@id/tglFacebook"
+            app:layout_constraintTop_toTopOf="@id/tglFacebook"/>
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/tglFacebook"
+            style="@style/toggle_button_style"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_double"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblAddSocialMedia"
+            app:track="@drawable/toggle_switch_track"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twitter"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintBottom_toBottomOf="@id/tglTwitter"
+            app:layout_constraintTop_toTopOf="@id/tglTwitter"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/tglTwitter"
+            style="@style/toggle_button_style"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_double"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tglFacebook"
+            app:track="@drawable/toggle_switch_track"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instagram"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintBottom_toBottomOf="@id/tglInstagram"
+            app:layout_constraintTop_toTopOf="@id/tglInstagram"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/tglInstagram"
+            style="@style/toggle_button_style"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_double"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tglTwitter"
+            app:track="@drawable/toggle_switch_track"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblSnapChatUserName"
+            style="@style/settings_text_style"
+            android:layout_marginTop="@dimen/default_margin_double"
+            android:ellipsize="marquee"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tglInstagram"
+            android:text="Snapchat username"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnEditSnapChatUserName"
+            style="@style/settings_edit_button_style"
+            android:text="@string/edit"
+            app:layout_constraintBottom_toBottomOf="@id/lblSnapChatUserName"
+            app:layout_constraintRight_toRightOf="@id/lblSnapChatUserName"
+            app:layout_constraintTop_toTopOf="@id/lblSnapChatUserName"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblProfessional"
+            style="@style/account_settings_header_style"
+            android:text="Professional"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnEditSnapChatUserName"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LinkedIn"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintBottom_toBottomOf="@id/tglLinkedIn"
+            app:layout_constraintTop_toTopOf="@id/tglLinkedIn"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/tglLinkedIn"
+            style="@style/toggle_button_style"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_double"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblProfessional"
+            app:track="@drawable/toggle_switch_track"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblProfessionalDescription"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="?android:attr/actionBarSize"
+            android:layout_marginRight="?android:attr/actionBarSize"
+            android:layout_marginTop="@dimen/half_margin"
+            android:text="@string/only_linked_in_account_integrates_in_professional_mode"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tglLinkedIn"
+            app:layout_constraintTop_toBottomOf="@id/tglLinkedIn"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lblCompanyName"
+            style="@style/settings_text_style"
+            android:layout_marginTop="@dimen/default_margin_double"
+            android:ellipsize="marquee"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblProfessionalDescription"
+            android:text="Company Name"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnEditCompanyName"
+            style="@style/settings_edit_button_style"
+            android:text="@string/edit"
+            app:layout_constraintBottom_toBottomOf="@id/lblCompanyName"
+            app:layout_constraintRight_toRightOf="@id/lblCompanyName"
+            app:layout_constraintTop_toTopOf="@id/lblCompanyName"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_margin_double"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintTop_toBottomOf="@id/lblCompanyName"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

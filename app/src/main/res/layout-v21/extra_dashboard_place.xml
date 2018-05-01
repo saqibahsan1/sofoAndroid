@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/half_margin"
+    android:paddingLeft="@dimen/half_margin"
+    android:paddingRight="@dimen/half_margin"
+    android:paddingTop="@dimen/half_margin"
+    tools:background="@android:color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgLocationImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/image"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblLocationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_margin"
+        android:text="Awesome bar"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/imgLocationImage"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblLocationAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:text="Address"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@id/lblLocationName"
+        app:layout_constraintTop_toBottomOf="@+id/lblLocationName"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lblLocationDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:drawableLeft="@drawable/ic_location_on_14"
+        android:drawablePadding="@dimen/half_margin"
+        android:gravity="center"
+        android:text="10 m away"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@+id/lblLocationName"
+        app:layout_constraintTop_toBottomOf="@id/lblLocationAddress"/>
+
+    <android.support.v7.widget.AppCompatRatingBar
+        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarter_margin"
+        android:progressTint="#fdd602"
+        android:rating="4"
+        app:layout_constraintLeft_toLeftOf="@+id/lblLocationAddress"
+        app:layout_constraintTop_toBottomOf="@id/lblLocationDistance"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btnPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/half_margin"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:drawableLeft="@drawable/ic_users"
+        android:drawablePadding="@dimen/half_margin"
+        android:drawableRight="@drawable/ic_chevron_right"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLocationImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgLocationImage"/>
+
+
+    <LinearLayout
+        android:id="@+id/ltPeopleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/half_margin"
+        android:paddingBottom="@dimen/half_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btnClosePeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_chevron_left_24"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lstPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
